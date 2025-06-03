@@ -1,0 +1,47 @@
+\documentclass[letterpaper,twocolumn,openany,nodeprecatedcode]{dndbook}
+
+
+\usepackage[italian]{babel}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{shortvrb}
+\usepackage{stfloats}
+\usepackage{datetime2}
+\usepackage{graphicx}
+\graphicspath{ {figures/} }
+\usepackage{array}
+\usepackage{titling}
+
+\usepackage{tabularx}
+\usepackage{blindtext,booktabs}
+\usepackage{caption} % for '\caption*' macro
+
+\pretitle{\begin{center}\fontsize{18bp}{18bp}\selectfont}
+   \posttitle{\vspace{14bp}\par\includegraphics[width=170mm]{logo}\par\end{center}}
+\preauthor{\begin{center}\fontsize{14bp}{14bp}\selectfont}
+   \postauthor{\par\end{center}}
+\predate{\begin{center}}
+   \postdate{\par\end{center} }
+
+\title{Addon per Dungeons \& Dragons 5e:\\\textit{Il grimorio del Mago Selvaggio}}
+\author{Matteo Scarpa - Fundor333}
+\date{\today}
+
+
+\include{utility/comandi}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\mainmatter
+
+\input{introduzione/introduzione}
+\input{avventura/introduzione}
+
+\input{appendici/appendici}
+\end{document}
